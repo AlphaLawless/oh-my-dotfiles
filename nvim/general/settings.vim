@@ -47,8 +47,9 @@ set mouse=a " Enable mouse for scrolling and resizing.
 set number " Show line numbers on the slidebar.
 set wildmenu " Display command line's tab complete options as a menu.
 set showmatch " Can reduce the need for %, the cursor will briefly jump to the matching brace when you insert one.
-set clipboard=unnamedplus "" Enable copies of files outside of vim.
+set clipboard=unnamedplus " Enable copies of files outside of vim.
 set hidden " TextEdit might fail if hidden is not set.
+set noshowmode " No show the mode in line bottom.
 
 " CODE FOLDING OPTIONS//
 
