@@ -1,4 +1,14 @@
+# Author: AlphaLawless
+# Repository:
+
 # Configuration sxhkd file:
+
+# rofi menus
+super + v
+	$HOME/.config/rofi/scripts/menu_volume.sh
+
+super + n
+	$HOME/.config/rofi/scripts/menu_network.sh
 
 # Screenshot Print
 Print

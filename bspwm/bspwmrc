@@ -5,7 +5,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Polybar launch
-$HOME/.config/polybar/colorblocks/launch.sh &
+$HOME/.config/polybar/launch.sh &
 
 # wallpaper
 feh --bg-fill /home/alphalawless/Pictures/Wallpapers/wolf.jpg &
