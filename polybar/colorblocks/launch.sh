@@ -10,5 +10,11 @@ killall -q polybar
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# Launch the bar
+# lauch polybar
 polybar -q main -c "$DIR"/config.ini &
+
+# Polybar in multiple monitors
+
+if [[ $(xrandr -q | grep "HDMI-1 connected") ]]; then
+  polybar -q top_external -c "$DIR"/config.ini &
+fi
