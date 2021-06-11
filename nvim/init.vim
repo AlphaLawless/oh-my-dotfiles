@@ -11,6 +11,7 @@ call plug#begin(stdpath('config') . '/autoload/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}                       " Coc Nvim
   Plug 'sheerun/vim-polyglot'                                           " Polyglot Vim
   Plug 'preservim/nerdcommenter'                                        " nerdcommenter
+  Plug 'andweeb/presence.nvim'                                          " Presence Discord
   Plug 'ryanoasis/vim-devicons'                                         " Devicons
   Plug 'mhinz/vim-startify'                                             " Start Screen
   Plug 'Yggdroot/indentLine'                                            " IndentLine
@@ -59,6 +60,7 @@ source $HOME/.config/nvim/plugins-configs/autotag.vim
 " source $HOME/.config/nvim/plugins-configs/lightline.vim
 source $HOME/.config/nvim/plugins-configs/fzf.vim
 source $HOME/.config/nvim/plugins-configs/ranger.vim
+source $HOME/.config/nvim/plugins-configs/presence.vim
 
 " SOURCE THEMES//
 
