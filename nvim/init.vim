@@ -11,7 +11,7 @@ call plug#begin(stdpath('config') . '/autoload/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}                       " Coc Nvim
   Plug 'sheerun/vim-polyglot'                                           " Polyglot Vim
   Plug 'preservim/nerdcommenter'                                        " nerdcommenter
-  Plug 'andweeb/presence.nvim'                                          " Presence Discord
+  " Plug 'andweeb/presence.nvim'                                          " Presence Discord
   Plug 'ryanoasis/vim-devicons'                                         " Devicons
   Plug 'mhinz/vim-startify'                                             " Start Screen
   Plug 'Yggdroot/indentLine'                                            " IndentLine
@@ -41,14 +41,14 @@ call plug#begin(stdpath('config') . '/autoload/plugged')
   Plug 'ctrlpvim/ctrlp.vim'                                             " Fuzzy find files
   Plug 'rbgrouleff/bclose.vim'                                          " Dependency for ranger vim
   Plug 'francoiscabrol/ranger.vim'                                      " Ranger vim
+  Plug 'HerringtonDarkholme/yats.vim'                                   " TS Syntax Hightlight
 
 call plug#end()
 
 " SOURCE PLUGINS//
 
 source $HOME/.config/nvim/plugins-configs/airline.vim
-source $HOME/.config/nvim/plugins-configs/bracey.vim
-source $HOME/.config/nvim/plugins-configs/coc.vim  
+source $HOME/.config/nvim/plugins-configs/coc.vim
 source $HOME/.config/nvim/plugins-configs/emmet.vim
 source $HOME/.config/nvim/plugins-configs/startify.vim
 source $HOME/.config/nvim/plugins-configs/nerd-tree.vim
@@ -57,19 +57,18 @@ source $HOME/.config/nvim/plugins-configs/indentline.vim
 source $HOME/.config/nvim/plugins-configs/commenter.vim
 source $HOME/.config/nvim/plugins-configs/signify.vim
 source $HOME/.config/nvim/plugins-configs/autotag.vim
-" source $HOME/.config/nvim/plugins-configs/lightline.vim
 source $HOME/.config/nvim/plugins-configs/fzf.vim
 source $HOME/.config/nvim/plugins-configs/ranger.vim
 source $HOME/.config/nvim/plugins-configs/presence.vim
 
 " SOURCE THEMES//
 
-"source $HOME/.config/nvim/themes/dracula.vim
+" source $HOME/.config/nvim/themes/dracula.vim
 source $HOME/.config/nvim/themes/onedark.vim
 
 " SOURCE GENERAL//
 
-source $HOME/.config/nvim/general/keybindsnvim.vim
+source $HOME/.config/nvim/general/keybinds.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/general/languages.vim
 

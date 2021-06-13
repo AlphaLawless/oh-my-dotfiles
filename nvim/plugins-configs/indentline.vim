@@ -2,4 +2,4 @@
 " Repository:
 
 let g:indentLine_enabled=0
-map <c-k>i :IndentLinesToggle<cr>
+nnoremap <c-i>i :IndentLinesToggle<cr>

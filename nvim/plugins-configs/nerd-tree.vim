@@ -7,7 +7,7 @@ let g:NERDTreeLimitedSyntax = 1
 " MAP OPTIONS//
 
 nnoremap <leader>n :NERDTreeFocus<cr>
-nnoremap <leader><Tab> :NERDTreeToggle<cr>
+nnoremap <C-n> :NERDTreeToggle<cr>
 
 " GIT NERDTree OPTIONS//
 

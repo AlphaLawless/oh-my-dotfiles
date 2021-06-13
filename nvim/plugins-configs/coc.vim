@@ -4,8 +4,11 @@
 
 " Snippets configuration.
 
-let g:coc_snippet_next = '<C-j>'
+let g:coc_snippet_next = '<C-l>'
 let g:coc_snippet_prev = '<C-k>'
+
+" prettier command for coc
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Make <tab> used for trigger completion, completion confirm, snippet expand.
 inoremap <silent><expr> <TAB>
@@ -19,15 +22,13 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-let g:coc_snippet_next = '<tab>'
-
-
 " Coc global extensions enabled.
 
 let g:coc_global_extensions = [
       \ 'coc-angular',
       \ 'coc-clangd',
       \ 'coc-css',
+      \ 'coc-phpls',
       \ 'coc-emmet',
       \ 'coc-json',
       \ 'coc-tsserver',
@@ -35,7 +36,10 @@ let g:coc_global_extensions = [
       \ 'coc-html',
       \ 'coc-elixir', 
       \ 'coc-python',
-      \ 'coc-vimlsp'
+      \ 'coc-vimlsp',
+      \ 'coc-vetur',
+      \ 'coc-cssmodules',
+      \ 'coc-snippets'
       \]
 
 " TextEdit might fail if hidden is not set.

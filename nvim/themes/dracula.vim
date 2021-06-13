@@ -2,11 +2,12 @@
 " Author: AlphaLawless
 " Repository:
 
+" airline theme
+let g:airline_theme = 'dracula'
+
 colorscheme dracula
 
 hi Comment cterm=italic
-
-set t_Co=256
 
 highlight ColorColumn ctermbg=DarkMagenta guibg=#302442
 if exists('+colorcolumn')
@@ -14,3 +15,12 @@ if exists('+colorcolumn')
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80va.\+', -1)
 endif
+
+" No nvim background for terminal.
+
+" if (has("termguicolors"))
+    " set termguicolors
+    " hi! Normal ctermbg=NONE guibg=NONE
+    " set notermguicolors
+    " set termguicolors
+" endif
