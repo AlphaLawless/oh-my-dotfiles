@@ -57,3 +57,10 @@ autocmd Filetype scss
             \| setlocal softtabstop=2
             \| setlocal expandta
             \| let g:indentLine_enabled=0
+
+autocmd Filetype go
+            \ setlocal tabstop=2
+            \| setlocal shiftwidth=2
+            \| setlocal softtabstop=2
+            \| setlocal expandtab
+            \| let g:indentLine_enabled=1
