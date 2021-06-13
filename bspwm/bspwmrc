@@ -13,9 +13,14 @@ feh --bg-fill $HOME/Pictures/Wallpapers/wolf.jpg &
 # dunst
 dunst & 
 
+# picom
+picom -b &
+
 # xrandr Multi Monitors
 if [[ $(xrandr -q | grep 'HDMI-1 connected') ]]; then
-  xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal --output HDMI-1 --mode 1600x900 --rotate normal --right-of eDP-1
+  xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal --output HDMI-1 --mode 1600x900 --rotate normal --right-of eDP-1 &
+else
+  bspc monitor -d I II III IV V VI VII VIII
 fi
 
 bspc monitor eDP-1 -d I II III IV
