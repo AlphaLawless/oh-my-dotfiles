@@ -2,7 +2,29 @@
 " Author: AlphaLawless
 " Repository:
 
-"SETTINGS FOR NVIM//
+" SETTINGS FOR NVIM//
+
+autocmd BufNewFile,BufRead *.s,*.S set filetype=ia64
+
+" Disable continuation of comments to the next line.
+
+autocmd FileType * set formatoptions-=cro
+
+" Sometimes syntax highlighting can get out of sync in large JSX and TSX files.
+" This was happening too often for me so I opted to enable `syntax sync fromstart`,
+" which forces vim to rescan the entire buffer when highlighting. This does so at a performance cost,
+" especially for large files. It is significantly faster in Neovim than in vim.
+" I prefer to enable this when I enter a JavaScript or TypeScript buffer, and disable it when I leave:
+
+autocmd BufNewFile,BufRead *.jsx set filetype=javascriptreact
+autocmd BufNewFile,BufRead *.tsx set filetype=typescriptreact
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
+" Automatically remove trailing whitespace.
+
+autocmd BufWritePre * %s/\s\+$//e
 
 " INDETION OPTIONS//
 
@@ -64,5 +86,5 @@ set noshowmode " No show the mode in line bottom.
 " MISCELLANEOUS OPTIONS//
 
 set history=1000 " Increase the undo limit.
-set nocompatible " 
+set nocompatible "
 set t_Co=256 " Support 256 colors.

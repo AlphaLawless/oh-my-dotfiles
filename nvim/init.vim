@@ -23,7 +23,7 @@ call plug#begin(stdpath('config') . '/autoload/plugged')
   Plug 'Xuyuanp/nerdtree-git-plugin'                                    " NERDTree Git Highlight
   Plug 'joshdick/onedark.vim'                                           " Onedark theme
   Plug 'dracula/vim', { 'as': 'dracula' }                               " Dracula theme
-  " Plug 'itchyny/lightline.vim'                                          " Lightline performance
+  " Plug 'itchyny/lightline.vim'                                          " Vim Lightline
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }                    " Go Support
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }  " Styled Components
   Plug 'turbio/bracey.vim'                                              " Bracey Server
@@ -42,6 +42,9 @@ call plug#begin(stdpath('config') . '/autoload/plugged')
   Plug 'rbgrouleff/bclose.vim'                                          " Dependency for ranger vim
   Plug 'francoiscabrol/ranger.vim'                                      " Ranger vim
   Plug 'HerringtonDarkholme/yats.vim'                                   " TS Syntax Hightlight
+  Plug 'luochen1990/rainbow'                                            " Colorizer Parentheses
+
+  Plug 'norcalli/nvim-colorizer.lua'                                    " Colorizer in lua
 
 call plug#end()
 
@@ -60,6 +63,11 @@ source $HOME/.config/nvim/plugins-configs/autotag.vim
 source $HOME/.config/nvim/plugins-configs/fzf.vim
 source $HOME/.config/nvim/plugins-configs/ranger.vim
 source $HOME/.config/nvim/plugins-configs/presence.vim
+source $HOME/.config/nvim/plugins-configs/rainbow-parentheses.vim
+
+" SOURCE LUA PLUGINS//
+
+" luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 " SOURCE THEMES//
 

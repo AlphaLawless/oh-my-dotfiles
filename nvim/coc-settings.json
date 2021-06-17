@@ -1,4 +1,7 @@
 {
+  "Lua.runtime.special": {
+    "include": "require"
+  },
   "json.format.enable": true,
   "jedi.enable": true,
   "jedi.startupMessage": true,
@@ -41,17 +44,5 @@
   "clangd.enabled": true,
   "clangd.semanticHighlighting": true,
   "clangd.serverCompletionRanking": true,
-  "clangd.path": "/home/alphalawless/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd",
-  "languageserver": {
-    "go": {
-      "command": "gopls",
-      "rootPatterns": [
-        "go.mod"
-      ],
-      "trace.server": "verbose",
-      "filetypes": [
-        "go"
-      ]
-    }
-  }
+  "clangd.path": "/home/alphalawless/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd"
 }

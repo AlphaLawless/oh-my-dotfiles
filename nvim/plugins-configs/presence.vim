@@ -5,7 +5,7 @@
 let g:presence_auto_update         = 1
 let g:presence_neovim_image_text   = "Works best than VSCode"
 let g:presence_main_image          = "file"
-let g:presence_client_id           = "793271441293967371"
+let g:presence_client_id           = "79327144129396737"
 let g:presence_log_level           = "info"
 let g:presence_debounce_timeout    = 10
 let g:presence_enable_line_number  = 1

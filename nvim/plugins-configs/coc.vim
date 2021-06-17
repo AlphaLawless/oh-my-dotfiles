@@ -34,12 +34,15 @@ let g:coc_global_extensions = [
       \ 'coc-tsserver',
       \ 'coc-go',
       \ 'coc-html',
-      \ 'coc-elixir', 
+      \ 'coc-elixir',
       \ 'coc-python',
       \ 'coc-vimlsp',
       \ 'coc-vetur',
       \ 'coc-cssmodules',
-      \ 'coc-snippets'
+      \ 'coc-snippets',
+      \ 'coc-lua',
+      \ 'coc-jedi',
+      \ 'coc-sh'
       \]
 
 " TextEdit might fail if hidden is not set.
@@ -122,7 +125,7 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
+nmap <F2> <Plug>(coc-rename)
 
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)

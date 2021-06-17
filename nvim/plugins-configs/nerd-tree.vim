@@ -1,8 +1,9 @@
 " Author: AlphaLawless
 " Repository:
 
-let g:NERDTreeHighlightCursorline = 0
+let g:NERDTreeHighlightCursorline = 0 " Disable cursorline in nerdtree.
 let g:NERDTreeLimitedSyntax = 1
+let NERDTreeShowHidden= 0 " Disable hidden file: use <Shift + i> for show the occult file.
 
 " MAP OPTIONS//
 
