@@ -7,14 +7,17 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # Polybar launch
 $HOME/.config/polybar/colorblocks/launch.sh &
 
-# wallpaper
-feh --bg-fill $HOME/Pictures/Wallpapers/wolf.jpg &
+# wallpaper with feh
+feh --bg-fill $HOME/Pictures/Wallpapers/1920x1080/landscape-winter.jpg &
 
-# dunst
-dunst & 
+# dunst is a lightweight replacement for the notification-daemons provided by most desktop environments.
+dunst &
 
 # picom
 picom -b &
+
+# unclutter hide cursor when you do not need it.
+unclutter &
 
 # xrandr Multi Monitors
 if [[ $(xrandr -q | grep 'HDMI-1 connected') ]]; then
@@ -42,6 +45,8 @@ bspc config focus_follows_pointer     true
 bspc config pointer_action1           move
 bspc config pointer_action2           resize_side
 bspc config pointer_action3           resize_corner
+
+xsetroot -cursor_name left_ptr &
 
 # Set the border colors.
 bspc config normal_border_color       "#282C34"  # window not active

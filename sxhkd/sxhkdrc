@@ -10,13 +10,17 @@ super + v
 super + n
 	$HOME/.config/rofi/scripts/menu_network.sh
 
+#
 # Screenshot Print
-Print
-	gnome-screenshot --file=${HOME}/Pictures/-$(date "+%d-%m-%Y-%H-%M-%S").png && notify-send -t 4000 --icon=camera-photo-symbolic.symbolic "Screenshot performed" "Saved in directory"
-  #import -window root ${HOME}/Pictures-$(date "+%d-%m-%Y-%H-%M-%S").png && notify-send -t 4000 --icon=camera-photo-symbolic.symbolic "Screenshot performed" "Saved in direction"
+#
 
-shift + Print
-	import ${HOME}/Pictures/-$(date "+%d-%m-%Y-%H-%M-%S").png && notify-send -t 4000 --icon=camera-photo "Screenshot performed" "Saved in directory"
+# Take a screenshot
+super + {_, shift+, alt+}Print
+    screenshot.sh -{s,c,a}
+
+Print
+	gnome-screenshot --file=${HOME}/Pictures/-$(date "+%Y-%m-%d-%H-%M-%S")-screenshot.png && notify-send -u low -t 3000 --icon=camera-photo-symbolic.symbolic "Screenshot performed" "Saved in directory"
+	# import -window root ${HOME}/Pictures-$(date "+%d-%m-%Y-%H-%M-%S").png && notify-send -u low -t 4000 --icon=camera-photo-symbolic.symbolic "Screenshot performed" "Saved in direction"
 
 # terminal emulator
 super + Return
@@ -28,7 +32,7 @@ super + d
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd && $HOME/.config/polybar/colorblocks/launch.sh
+	pkill -USR1 -x sxhkd
 
 #
 # bspwm hotkeys
@@ -135,3 +139,17 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Audio Settings
+XF86AudioLowerVolume
+	amixer set Master 5%-
+XF86AudioRaiseVolume
+	amixer set Master 5%+
+XF86AudioMute
+	amixer set Master toggle
+
+# Brightness Settings
+XF86MonBrightnessDown
+	xbacklight -dec 5
+XF86MonBrightnessUp
+	xbacklight -inc 5
