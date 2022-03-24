@@ -83,6 +83,7 @@ Até o momento não tenho um nome legal para os meus dotifles, por isso estou ch
     <li><a href="https://github.com/Yggdroot/indentLine">indentline</a></li>
   </ul>
 </details>
+
 ## Installation
 
 Vou ficar devendo 😅. Quem quiser fazer uso de um `makefile` ou automatizar usando um shellscript pode ficar a vontade. Mas no momento eu não estou usando distribuições debian-based... sorry!
