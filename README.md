@@ -54,6 +54,7 @@ Até o momento não tenho um nome legal para os meus dotifles, por isso estou ch
     <li><a href="https://forums.debian.net//viewtopic.php?f=16&t=127708">Install for Debian-based</a></li>
     <li><a href="https://github.com/adi1090x/polybar-themes">Polybar Themes</a></li>
     <li><a href="https://github.com/adi1090x/rofi">rofi themes</a></li>
+    <li><a href="https://wiki.archlinux.org/title/unclutter">unclutter</a></li>
   </ul>
 </details>
 
