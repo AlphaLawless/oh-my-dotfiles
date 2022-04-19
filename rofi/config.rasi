@@ -1,8 +1,8 @@
-/** Configured For Applets **/
-
 configuration {
-  show-icons: true;
-  location: 5;
-  yoffset: -50;
-  xoffset: -20;
+  show-icons:       true;
+  icon-theme:       "Zafiro";
+  terminal:         "alacritty";
+  cycle:            false;
+  hide-scrollbar:   true;
+  disable-history:  false;
 }
