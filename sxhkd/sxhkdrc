@@ -15,7 +15,7 @@ super + t
 ##---------- Rofi Launcher & Menus ----------##
 
 # Rofi App Launcher
-super
+alt + F1
 	sh ~/.config/bspwm/rofi/bin/launcher
 
 # Rofi Network Menu
@@ -161,7 +161,7 @@ super + alt + {h,j,k,l}
 	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
 
 ## Move floating windows
-alt + shift + {Left,Down,Up,Right}
+alt + shift + {h,j,k,l}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # Hide/Unhide Window
