@@ -1,33 +1,26 @@
 font:
-  # Normal (roman) font face
   normal:
-    family: "Iosevka Custom"
-    #style: Regular
+    family: "JetBrainsMono Nerd Font"
+    #style: Medium
 
-  # Bold font face
   bold:
-    family: "Iosevka Custom"
+    family: "JetBrainsMono Nerd Font"
     #style: Bold
 
-  # Italic font face
   italic:
-    family: "Iosevka Custom"
+    family: "JetBrainsMono Nerd Font"
     #style: Italic
 
-  # Bold italic font face
   bold_italic:
-    family: "Iosevka Custom"
+    family: "JetBrainsMono Nerd Font"
     #style: Bold Italic
 
-  # Point size
-  size: 9
+  size: 10
 
-  # Offset
-  #offset:
-  #  x: 0
-  #  y: 0
+  offset:
+    x: 0
+    y: 0
 
-  # Glyph offset
-  #glyph_offset:
-  #  x: 0
-  #  y: 0
+  glyph_offset:
+    x: 0
+    y: 0
