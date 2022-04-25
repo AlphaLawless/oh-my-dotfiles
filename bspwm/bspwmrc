@@ -5,6 +5,9 @@
 # --- Environment --->
 export PATH="${PATH}:$HOME/.config/bspwm/bin"
 
+# --- Java Applications --->
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # --- Colors from .Xresources --->
 xrdb ~/.Xresources
 colors() {
@@ -72,6 +75,7 @@ bspc rule -a Alacritty desktop='^1' follow=on focus=on
 bspc rule -a firefox desktop='^2' follow=on focus=on
 bspc rule -a opera desktop='^2' follow=on focus=on
 bspc rule -a brave desktop='^2' follow=on focus=on
+bspc rule -a Min desktop='^2' follow=on focus=on
 
 # 3 > files
 declare -a files=(Pcmanfm Thunar qBittorrent Org.gnome.Nautilus)
@@ -126,7 +130,10 @@ bspc rule -a Conky state=floating manage=off
 # --- Inicialization --->
 
 # kill if already running
-killall -9 sxhkd dunst xsettingsd xfce4-power-manager
+killall -9 sxhkd dunst xsettingsd xfce4-power-manager ksuperkey
+
+# Launch xsettingsd daemon
+xsettingsd &
 
 # sxhkd
 pgrep -x sxhkd > /dev/null || sxhkd &
@@ -137,8 +144,15 @@ bash $HOME/.fehbg
 # Power management
 xfce4-power-manager &
 
+# Enable ksuperkey for Menu
+ksuperkey -e 'Super_L=Alt_L|F1' &
+ksuperkey -e 'Super_R=Alt_L|F1' &
+
 # unclutter hide cursor when you do not need it.
 unclutter &
+
+# Start mpd
+exec mpd &
 
 # Scripts bsp
 bspcolors
