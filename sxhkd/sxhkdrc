@@ -33,8 +33,8 @@ super + {w,m,x,r,s}
 ##---------- Applications ----------##
 
 # Launch Apps
-super + shift + {f,w,e}
-	{thunar,firefox,geany}
+super + shift + {f,w,e,n}
+	{thunar,firefox,geany,min}
 
 # Terminal Apps
 ctrl + alt + {v,r,h}
@@ -153,11 +153,11 @@ super + {_,shift + }{1-8}
 	bspc {desktop -f,node -d} '^{1-8}'
 
 # Expanding windows
-super + control + {h,j,k,l}
+super + control + {h,l,k,j}
 	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
 
 ## Shrinking windows
-super + alt + {h,j,k,l}
+super + alt + {h,l,k,j}
 	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
 
 ## Move floating windows
@@ -167,5 +167,3 @@ alt + shift + {h,j,k,l}
 # Hide/Unhide Window
 super + shift + i
 	winmask
-
-##---------- EOF ----------##
