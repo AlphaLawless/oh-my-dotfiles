@@ -89,12 +89,3 @@ compositing-foreground = over
 compositing-overline = over
 compositing-underline = over
 compositing-border = over
-
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-;;	    __________  ______
-;;	   / ____/ __ \/ ____/
-;;	  / __/ / / / / /_
-;;	 / /___/ /_/ / __/
-;;	/_____/\____/_/
-;;
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
