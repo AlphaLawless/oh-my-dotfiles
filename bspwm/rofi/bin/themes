@@ -98,4 +98,3 @@ case $chosen in
         bash ${BSP}/set-theme  'wave.jpg' 'wave' 'Wave' 'Luv-Folders-Dark' 'Vimix'
         ;;
 esac
-

@@ -69,7 +69,7 @@ fi
 # Variable passed to rofi
 options="$screen\n$area\n$window\n$infive\n$inten"
 
-chosen="$(echo -e "$options" | $rofi_command -p 'Take Screenshot' -dmenu -selected-row 0)"
+chosen="$(echo "$options" | $rofi_command -p 'Take Screenshot' -dmenu -selected-row 0)"
 case $chosen in
     $screen)
 		shotnow

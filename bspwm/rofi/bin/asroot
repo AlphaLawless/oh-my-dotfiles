@@ -17,7 +17,7 @@ options="$terminal\n$files\n$editor\n$clifm\n$lpad\n$vim"
 
 ## Functions
 
-chosen="$(echo -e "$options" | $rofi_command -p "Run apps as root" -dmenu -selected-row 0)"
+chosen="$(echo "$options" | $rofi_command -p "Run apps as root" -dmenu -selected-row 0)"
 case $chosen in
     $terminal)
         apps_as_root 'alacritty --class alacritty-float,alacritty-float --config-file /root/.config/bspwm/alacritty/alacritty.yml'
